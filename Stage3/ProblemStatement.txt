@@ -1,0 +1,36 @@
+Problem Statement : Detecting Image Tampering
+
+Details : 
+User generated images are everywhere around us today – it is estimated that over 90 million photos are added to social media sites every day. In addition to using original images, users also sometimes express their creativity by manipulating their images. With today’s meme culture, it is also common to find many different manipulated versions of the same image relating to any given topic or incident. In most cases, this is a harmless and fun activity. However, images are also sometimes manipulated with a malicious intent to cause social harm, to spread fake news, or to satisfy the vested interests of a specific group. These kinds of images have the potential to cause immense damage to our social fabric. 
+Given the sophistication and ease of use of image manipulation tools, it is often difficult to differentiate an authentic image from a manipulated version. It is useful to have powerful tools that will efficiently and accurately be able to classify authentic (real) images from manipulated (fake) ones. Deep learning promises to offer some of the best solutions to this problem. In stage 3 of the Fractal AI Triathlon, you will build a classifier that is able to differentiate between real and fake images. 
+
+Problem Statement: Build a model to classify an image as real or fake 
+
+Training data set:  
+The training data set is divided into real and fake (manipulated) images, which are in two separate folders: 
+Real: 8373 images 
+Fake: 23887 images 
+Data will be available at the following location on your instance: 
+/home/ubuntu/share/stage-3/stage3_image_data/train 
+IMPORTANT NOTE : Please note that the training images may contain few corrupted images. Please get rid of them during the data pre-processing stage else this will cause issues in building and running the model
+
+Test Dataset : 
+The test data is available at the following location on your instance : 
+/home/ubuntu/share/stage-3/stage3_image_data/test 
+The test dataset has 5430 images. 
+All images are either in JPEG or PNG format. 
+
+Evaluation :
+Your model will be scored using F1 score (also called balanced F-score, the harmonic mean of precision and recall). 
+
+What to submit :
+
+Output: You should create a csv called “output.csv” in the format given in the example below:   
+
+Filename     	      Prediction  
+fdeufd53d7ed.jpeg 	fake 
+fdedmbkd537.png 	  real 
+ceded37ddded.png  	real  
+cedeffd53ddd7.jpg  	fake 
+qweedeufd537.jpeg  	real 
+ 
